@@ -1,0 +1,140 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  border: 1px solid blue;
+  width: 500px;
+  padding: 20px 40px 30px 40px;
+  border-radius: 25px;
+  border: none;
+  filter: drop-shadow(5px 5px 5px #837a8b);
+
+  background: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.gif {
+  position: absolute;
+  z-index: -1;
+  width: 450px;
+}
+
+.units {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 30px 0px;
+  position: relative;
+  top: -50px;
+  margin-left: -20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.date {
+  box-sizing: content-box;
+  width: 70%;
+  font-size: 20px;
+}
+
+.box {
+  padding-left: 0px;
+}
+.city {
+  margin-bottom: 30px;
+  padding: 2px 50px 2px 5px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  border: 0px 0px 30px 0px;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+.search-button {
+  margin-bottom: 30px;
+
+  padding: 2px 15px 2px 15px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  transition: 200ms ease-in-out;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+#current-button {
+  margin-bottom: 30px;
+  padding: 2px 15px 2px 15px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  transition: 200ms ease-in-out;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+#button-one {
+  margin: 0px 0px 0px 40px;
+}
+
+#button-two {
+  margin: 0px 0px 0px 10px;
+}
+
+.search-button:hover {
+  background-color: rgb(214, 214, 214);
+  color: black;
+  border: 1px solid gray;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+#current-button:hover {
+  background-color: rgb(214, 214, 214);
+  color: black;
+  border: 1px solid gray;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  background: transparent;
+}
+
+.card-body {
+  padding: 0px 0px 10px 0px;
+}
+
+.card-subtitle {
+  letter-spacing: 2.5px;
+}
+
+.card-title {
+  font-size: 100px;
+  margin: -15px 0px 0px 0px;
+}
+
+.card-text {
+  letter-spacing: 2.6px;
+}
+
+.main-emoji {
+  width: 150px;
+}
+
+.extended {
+  width: 450px auto;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.925);
+  border: none;
+  border-radius: 8px;
+  filter: drop-shadow(2px 5px 5px #837a8b36);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}

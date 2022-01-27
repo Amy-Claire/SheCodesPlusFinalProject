@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img class="gif" src="images/sun.gif" alt="stars" />
+      <h1>
+        <span class="col date" id="current-time">THURSDAY 9 DECEMBER</span>
+        
+      </h1>
+
+      <form id="search-city">
+        <div class="row">
+          <div class="col-6 box">
+            <input
+              class="city"
+              id="search-input"
+              type="Search"
+              placeholder="Enter a city..."
+            />
+          </div>
+
+          <div class="col-2" id="button-one">
+            <input type="submit" value="Search" class="search-button" />
+            
+          </div>
+       
+       <div class="col-2" id="button-two">
+       <button id="current-button">  current  </button>
+        </div>
+      
+      
+       
+      </form>
+   
+    
+   
+      
+        
+   
+
+
+
+      <div class="current-temp">
+        <div class="row">
+          <div class="col-7">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted" id="currently">
+                 
+                </h6>
+                <h5 class="card-title">
+                  <span id="maintemp">
+                 
+                  </span>
+                  
+                  <span class="units">
+                    <span> <a href="#" id="celcius-link"> ℃ </a>
+                      |
+                    <span> <a href="#" id = "fahrenheit-link"> ℉ </a>
+                  </span>
+                </h5>
+
+                <p class="card-text">
+                  HIGH
+                  <span id="high"> </span>
+                  ℃ | LOW
+                  <span id="low"> </span>
+                  ℃
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="card main-emoji">
+              <img src="images/sun.png" alt="sun" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extended">
+        <div class="row">
+          <div class="col-5 day">Day</div>
+          <div class="col-3 emoji">Emoji</div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+        </div>
+      </div>
+
+      <div class="extended">
+        <div class="row">
+          <div class="col-5 day">Day</div>
+          <div class="col-3 emoji">Emoji</div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+        </div>
+      </div>
+
+      <div class="extended">
+        <div class="row">
+          <div class="col-5 day">Day</div>
+          <div class="col-3 emoji">Emoji</div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+        </div>
+      </div>
+
+      <div class="extended">
+        <div class="row">
+          <div class="col-5 day">Day</div>
+          <div class="col-3 emoji">Emoji</div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+        </div>
+      </div>
+
+      <div class="extended">
+        <div class="row">
+          <div class="col-5 day">Day</div>
+          <div class="col-3 emoji">Emoji</div>
+          <div class="col-2 high">High</div>
+          <div class="col-2 low">Low</div>
+        </div>
+      </div>
+    </div>
+    <footer>  <a href="https://github.com/Amy-Claire/Amy-Weather-App"> Open-source code </a>  by Amy Daniels</footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
