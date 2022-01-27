@@ -86,7 +86,6 @@ function getForecast(coordinates) {
   console.log(apiURL);
   axios.get(apiURL).then(displayForecast);
 }
-// search for a city
 
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#maintemp");
