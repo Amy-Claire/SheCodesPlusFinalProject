@@ -18,9 +18,9 @@
   <body>
     <div class="container">
       <img class="gif" src="images/sun.gif" alt="stars" />
+
       <h1>
-        <span class="col date" id="current-time">THURSDAY 9 DECEMBER</span>
-        
+        <span id="date"></span>
       </h1>
 
       <form id="search-city">
@@ -36,111 +36,73 @@
 
           <div class="col-2" id="button-one">
             <input type="submit" value="Search" class="search-button" />
-            
           </div>
-       
-       <div class="col-2" id="button-two">
-       <button id="current-button">  current  </button>
+
+          <div class="col-2" id="button-two">
+            <button id="current-button">Current</button>
+          </div>
         </div>
-      
-      
-       
       </form>
-   
-    
-   
+
+
       
+
+      <div id="currently"></div>
+      <span id="description"> </span>
+      <span> with a wind speed of </span>
+      <span id="wind"> </span>
+      <span> Km/h</span>
+
+
+
+      <div class = "temp-units">
         
-   
-
-
-
-      <div class="current-temp">
         <div class="row">
-          <div class="col-7">
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted" id="currently">
-                 
-                </h6>
-                <h5 class="card-title">
-                  <span id="maintemp">
-                 
-                  </span>
-                  
-                  <span class="units">
-                    <span> <a href="#" id="celcius-link"> ℃ </a>
-                      |
-                    <span> <a href="#" id = "fahrenheit-link"> ℉ </a>
-                  </span>
-                </h5>
-
-                <p class="card-text">
-                  HIGH
-                  <span id="high"> </span>
-                  ℃ | LOW
-                  <span id="low"> </span>
-                  ℃
-                </p>
-              </div>
-            </div>
-          </div>
 
           <div class="col-5">
-            <div class="card main-emoji">
-              <img src="images/sun.png" alt="sun" />
-            </div>
+            <span class="main-temp" id="maintemp"> </span> 
+
+            <span class="units">
+              <span><a href="#" id="celcius-link" class="active"> ℃ </a></span>
+               |
+              <span><a href="#" id="fahrenheit-link"> ℉ </a> </span>
+          </span>
           </div>
+          
+          <div class="col-7"> 
+            <img src="" alt="cloudy" class="icon" id="icon" width="150" />
+          </div>
+        
         </div>
-      </div>
+      </div> 
+ 
 
-      <div class="extended">
-        <div class="row">
-          <div class="col-5 day">Day</div>
-          <div class="col-3 emoji">Emoji</div>
-          <div class="col-2 high">High</div>
-          <div class="col-2 low">Low</div>
-        </div>
-      </div>
+           
+         
 
-      <div class="extended">
-        <div class="row">
-          <div class="col-5 day">Day</div>
-          <div class="col-3 emoji">Emoji</div>
-          <div class="col-2 high">High</div>
-          <div class="col-2 low">Low</div>
-        </div>
-      </div>
 
-      <div class="extended">
-        <div class="row">
-          <div class="col-5 day">Day</div>
-          <div class="col-3 emoji">Emoji</div>
-          <div class="col-2 high">High</div>
-          <div class="col-2 low">Low</div>
-        </div>
-      </div>
+ 
 
-      <div class="extended">
-        <div class="row">
-          <div class="col-5 day">Day</div>
-          <div class="col-3 emoji">Emoji</div>
-          <div class="col-2 high">High</div>
-          <div class="col-2 low">Low</div>
-        </div>
-      </div>
 
-      <div class="extended">
-        <div class="row">
-          <div class="col-5 day">Day</div>
-          <div class="col-3 emoji">Emoji</div>
-          <div class="col-2 high">High</div>
-          <div class="col-2 low">Low</div>
-        </div>
-      </div>
+    <div class="high-low">
+      <p class="card-text">
+        HIGH
+        <span id="high"> </span>
+        ℃ | LOW
+        <span id="low"> </span>
+        ℃
+      </p>
     </div>
-    <footer>  <a href="https://github.com/Amy-Claire/Amy-Weather-App"> Open-source code </a>  by Amy Daniels</footer>
 
-    <script src="src/index.js"></script>
+    <div class="weather-forecast" id="forecast"></div>
+
+    <footer>
+      <a href="https://github.com/Amy-Claire/Amy-Weather-App">
+        Open-source code
+      </a>
+      by Amy Daniels
+    </footer>
   </body>
+
+  <script src="src/index.js"></script>
 </html>

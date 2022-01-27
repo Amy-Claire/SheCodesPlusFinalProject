@@ -21,10 +21,10 @@ body {
 }
 
 .units {
-  font-size: 30px;
+  font-size: 10px;
   font-weight: 100;
   margin: 30px 0px;
-  position: relative;
+
   top: -50px;
   margin-left: -20px;
 }
@@ -96,31 +96,24 @@ h1 {
   filter: drop-shadow(2px 5px 5px #837a8b36);
 }
 
-.card {
-  margin-bottom: 20px;
-  border: none;
-  background: transparent;
+.icon {
+  margin-right: 35px;
 }
 
-.card-body {
-  padding: 0px 0px 10px 0px;
-}
-
-.card-subtitle {
-  letter-spacing: 2.5px;
-}
-
-.card-title {
+.main-temp {
   font-size: 100px;
-  margin: -15px 0px 0px 0px;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
-.card-text {
+.units {
+  margin-left: 10px;
+  vertical-align: 20px;
+  font-size: 15px;
+}
+
+.high-low {
   letter-spacing: 2.6px;
-}
-
-.main-emoji {
-  width: 150px;
 }
 
 .extended {
