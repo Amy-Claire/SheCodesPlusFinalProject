@@ -37,32 +37,40 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row"`;
+  let forecastHTML = `<div class="row forecastday"`;
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2">
-        <div class="weather-forecast-date">
-          ${formatDay(forecastDay.dt)}
+      <div class="row forecastday">
+
+        <div class="weather-forecast-date col-3">
+          ${formatDay(forecastDay.dt)}</div>
+         
+      <span class="forecastIcon col-2">
           <img
             src="https://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
             }@2x.png"
-            alt="rainy clouds"
+            
             width="42"
+           
           />
-          <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max"> ${Math.round(
+          </span>
+          
+<span class="col-1"> </span> 
+          <span class="weather-forecast-temperatures col-6 ">
+            <span class="weather-forecast-temperature-max"> H: ${Math.round(
               forecastDay.temp.max
-            )} </span>
-            <span class="weather-forecast-temperature-min"> ${Math.round(
+            )}℃ |</span>
+            <span class="weather-forecast-temperature-min"> L: ${Math.round(
               forecastDay.temp.min
-            )} </span>
-          </div>
-      </div>
+            )} ℃ </span>
+          </span>
+      </span>
+    
     </div>
   `;
     }
